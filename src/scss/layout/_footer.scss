@@ -1,0 +1,28 @@
+.footer {
+  &__container {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 2rem;
+    color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6vw;
+  }
+  &__logo {
+    width: 1.75rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    &__social {
+      width: 30vw;
+    }
+  }
+}

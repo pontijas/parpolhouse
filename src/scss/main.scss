@@ -1,0 +1,36 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/links";
+@import "layout/page";
+@import "layout/footer";
+
+// main
+
+.main {
+  &__container {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+  }
+  &__logo {
+    margin-bottom: 2rem;
+    width: 60vw;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main {
+    &__logo {
+      width: 80vw;
+    }
+    &__title {
+      font-size: 1rem;
+    }
+  }
+}
